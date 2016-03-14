@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		186F5FFE1A397D0300A45050 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 186F5FFD1A397D0300A45050 /* main.cpp */; };
+		1897FEA51C968AA1001BD2DC /* ikcp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1897FEA31C968AA1001BD2DC /* ikcp.cpp */; };
+		1897FEA81C968F34001BD2DC /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1897FEA61C968F34001BD2DC /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		186F5FFA1A397D0300A45050 /* cj */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cj; sourceTree = BUILT_PRODUCTS_DIR; };
 		186F5FFD1A397D0300A45050 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1897FEA31C968AA1001BD2DC /* ikcp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ikcp.cpp; sourceTree = "<group>"; };
+		1897FEA41C968AA1001BD2DC /* ikcp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ikcp.hpp; sourceTree = "<group>"; };
+		1897FEA61C968F34001BD2DC /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		1897FEA71C968F34001BD2DC /* test.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				186F5FFD1A397D0300A45050 /* main.cpp */,
+				1897FEA31C968AA1001BD2DC /* ikcp.cpp */,
+				1897FEA41C968AA1001BD2DC /* ikcp.hpp */,
+				1897FEA61C968F34001BD2DC /* test.cpp */,
+				1897FEA71C968F34001BD2DC /* test.hpp */,
 			);
 			path = cj;
 			sourceTree = "<group>";
@@ -88,7 +98,7 @@
 		186F5FF21A397D0300A45050 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = apple;
 				TargetAttributes = {
 					186F5FF91A397D0300A45050 = {
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1897FEA51C968AA1001BD2DC /* ikcp.cpp in Sources */,
 				186F5FFE1A397D0300A45050 /* main.cpp in Sources */,
+				1897FEA81C968F34001BD2DC /* test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +156,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -232,6 +245,7 @@
 				186F60031A397D0300A45050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
